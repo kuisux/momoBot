@@ -1,4 +1,4 @@
-﻿
+
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
@@ -36,7 +36,7 @@ namespace momoBot.commands
                 {
                     Title = $"Here is the profile picture of **{user.Username}**",
                     ImageUrl = avatarUrl,
-                    Color = DiscordColor.Lilac
+                    Color = new DiscordColor("#FFCCBB")
                 };
 
                 await ctx.Channel.SendMessageAsync(embed: message);
@@ -60,7 +60,7 @@ namespace momoBot.commands
             var userCardEmbed = new DiscordEmbedBuilder
             {
                 Title = $"your card is {userCard.selectedCard}",
-                Color = DiscordColor.Lilac
+                Color = new DiscordColor("#FFCCBB")
             };
 
             await ctx.Channel.SendMessageAsync(embed: userCardEmbed);
@@ -70,7 +70,7 @@ namespace momoBot.commands
             var botCardEmbed = new DiscordEmbedBuilder
             {
                 Title = $"my card is {botCard.selectedCard}",
-                Color = DiscordColor.Lilac
+                Color = new DiscordColor("#FFCCBB")
             };
 
             await ctx.Channel.SendMessageAsync(embed: botCardEmbed);
@@ -80,7 +80,7 @@ namespace momoBot.commands
                 var winEmbed = new DiscordEmbedBuilder
                 {
                     Title = "you win!",
-                    Color = DiscordColor.Green
+                    Color = new DiscordColor("#C1E1C1")
                 };
                 await ctx.Channel.SendMessageAsync(embed: winEmbed);
             }
@@ -89,7 +89,7 @@ namespace momoBot.commands
                 var loseEmbed = new DiscordEmbedBuilder
                 {
                     Title = "i win!",
-                    Color = DiscordColor.Red
+                    Color = new DiscordColor("#FF6655")
                 };
                 await ctx.Channel.SendMessageAsync(embed: loseEmbed);
             }
@@ -98,7 +98,7 @@ namespace momoBot.commands
                 var tieEmbed = new DiscordEmbedBuilder
                 {
                     Title = "its a tie!",
-                    Color = DiscordColor.Orange
+                    Color = new DiscordColor("FF8833")
                 };
                 await ctx.Channel.SendMessageAsync(embed: tieEmbed);
             }
