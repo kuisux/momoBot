@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Theme-Peach-FFCCBB?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Ripe-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-C1E1C1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-white?style=for-the-badge" />
 </p>
 
 <p align="center">
@@ -11,11 +11,12 @@
     <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge" alt="Invite Momo" />
   </a>
   <a href="https://discord.gg/cKq99GVVRf">
-    <img src="https://img.shields.io/badge/join-server-C1E1C1?style=for-the-badge" alt="Join Server" />
+    <img src="https://img.shields.io/badge/join-server-orange?style=for-the-badge" alt="Join Server" />
   </a>
 </p>
 
-**Momo** is a sweet, feature-rich Discord bot designed to make server management feel like a breeze and community interaction feel like a treat. From powerful administrative "harvesting" tools to fun social commands, Momo is the perfect pick for your digital garden.
+
+**Momo** is a sweet, feature-rich Discord bot designed to make server management feel like a breeze and community interaction feel like a treat. From powerful administrative tools to fun social commands, Momo is the perfect pick for your digital garden.
 
 ---
 
@@ -38,6 +39,7 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 | ✨ **Fun** | `!peach` | Give a peach to a friend to show appreciation. |
 | ✨ **Fun** | `!shake` | Shake the tree to see what random fortune falls out. |
 | ✨ **Fun** | `!smoothie` | Combine two users to see their "compatibility flavor." |
+| ✨ **Fun** | `!gamba` | Play the bot at a card game, putting your peaches on the line. |
 
 ---
 
@@ -47,11 +49,11 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 🎨 Aesthetic Guide
 If you are contributing or customizing Momo, please use the following brand colors:
 
-Primary Peach: #FFCCBB
+Primary Peach: `#FFCCBB`
 
-Leaf Green: #C1E1C1
+Leaf Green: `#C1E1C1`
 
-Soft White: #F9F9F9
+Soft White: `#F9F9F9`
 
 🤝 Community & Support
 Found a bug or have a feature request?
