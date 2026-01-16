@@ -49,11 +49,11 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 🎨 Aesthetic Guide
 If you are contributing or customizing Momo, please use the following brand colors:
 
-Primary Peach: `#FFCCBB`
-
-Leaf Green: `#C1E1C1`
-
-Soft White: `#F9F9F9`
+| Color | Name | Hex |
+| :--- | :--- | :--- |
+| ![](https://via.placeholder.com/15/FFCCBB/FFCCBB?text=+) | Primary Peach | `#FFCCBB` |
+| ![](https://via.placeholder.com/15/C1E1C1/C1E1C1?text=+) | Leaf Green | `#C1E1C1` |
+| ![](https://via.placeholder.com/15/F9F9F9/F9F9F9?text=+) | Soft White | `#F9F9F9` |
 
 🤝 Community & Support
 Found a bug or have a feature request?
