@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Theme-Peach-FFCCBB?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Ripe-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-white?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-C1E1C1?style=for-the-badge" />
 </p>
 
 <p align="center">
@@ -11,10 +11,9 @@
     <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge" alt="Invite Momo" />
   </a>
   <a href="https://discord.gg/cKq99GVVRf">
-    <img src="https://img.shields.io/badge/join-server-orange?style=for-the-badge" alt="Join Server" />
+    <img src="https://img.shields.io/badge/join-server-C1E1C1?style=for-the-badge" alt="Join Server" />
   </a>
 </p>
-
 
 **Momo** is a sweet, feature-rich Discord bot designed to make server management feel like a breeze and community interaction feel like a treat. From powerful administrative "harvesting" tools to fun social commands, Momo is the perfect pick for your digital garden.
 
