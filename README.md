@@ -1,1 +1,1 @@
-# momoBot
+# momo - a peachy discord bot
