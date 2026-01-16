@@ -41,27 +41,12 @@ To get Momo rooted in your server, follow these steps:
 * A Discord Bot Token via the [Developer Portal](https://discord.com/developers/applications)
 
 ### Installation
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/yourusername/momo-bot.git](https://github.com/yourusername/momo-bot.git)
-   cd momo-bot
-Fill the soil (Install dependencies)
+<p align="center">
+  <img src="[https://img.shields.io/badge/Theme-Peach-FFCCBB?style=for-the-badge](https://img.shields.io/badge/invite-momo-FFCCBB?style=flat&link=https%3A%2F%2Fdiscord.com%2Foauth2%2Fauthorize%3Fclient_id%3D1461343342758592544%26permissions%3D8%26integration_type%3D0%26scope%3Dbot%2Bapplications.commands
+)" />
+</p>
 
-Bash
 
-npm install
-Add your sunlight (Configuration) Create a .env file in the root directory:
-
-Code snippet
-
-TOKEN=YOUR_BOT_TOKEN_HERE
-PREFIX=!
-COLOR=#FFCCBB
-Watch it grow
-
-Bash
-
-node index.js
 🎨 Aesthetic Guide
 If you are contributing or customizing Momo, please use the following brand colors:
 
