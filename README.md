@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Theme-Peach-FFCCBB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Ripe-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Ripe-FF8833?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-white?style=for-the-badge" />
 </p>
 
@@ -51,6 +51,7 @@ If you are contributing or customizing Momo, please use the following brand colo
 
 * **Primary Peach:** ` #FFCCBB ` ![#FFCCBB](https://img.shields.io/badge/-FFCCBB-FFCCBB?style=flat-square)
 * **Leaf Green:** ` #C1E1C1 ` ![#C1E1C1](https://img.shields.io/badge/-C1E1C1-C1E1C1?style=flat-square)
+* **Tangy Orange** ` #FF8833 ` ![#FF8833](https://img.shields.io/badge/-FF8833-FF8833?style=flat-square)
 * **Soft White:** ` #F9F9F9 ` ![#F9F9F9](https://img.shields.io/badge/-F9F9F9-F9F9F9?style=flat-square)
 
 🤝 Community & Support
