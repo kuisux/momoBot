@@ -35,7 +35,9 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 ## 🛠️ Gardening Instructions (Setup)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge&cacheSeconds=https%3A%2F%2Fdiscord.com%2Foauth2%2Fauthorize%3Fclient_id%3D1461343342758592544%26permissions%3D8%26integration_type%3D0%26scope%3Dbot%2Bapplications.commands" />
+  <a href="https://discord.com/oauth2/authorize?client_id=1461343342758592544&permissions=8&integration_type=0&scope=bot+applications.commands">
+    <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge" alt="Invite Momo" />
+  </a>
 </p>
 
 
