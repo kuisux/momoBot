@@ -32,7 +32,7 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 
 ---
 
-## 🛠️ Gardening Instructions (Setup)
+## 🛠️ Invite Link
 
 <p align="center">
   <a href="https://discord.com/oauth2/authorize?client_id=1461343342758592544&permissions=8&integration_type=0&scope=bot+applications.commands">
@@ -40,6 +40,7 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
   </a>
 </p>
 
+---
 
 🎨 Aesthetic Guide
 If you are contributing or customizing Momo, please use the following brand colors:
