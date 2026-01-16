@@ -60,4 +60,4 @@ Submit a Pull Request to help Momo grow.
 
 Join our Support Server for a chat!
 
-<p align="center"> Built with 🍑 by [YourName/TeamName] </p>
+<p align="center"> Built with 🍑 by kuisux </p>
