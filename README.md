@@ -6,6 +6,16 @@
   <img src="https://img.shields.io/badge/License-MIT-white?style=for-the-badge" />
 </p>
 
+<p align="center">
+  <a href="https://discord.com/oauth2/authorize?client_id=1461343342758592544&permissions=8&integration_type=0&scope=bot+applications.commands">
+    <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge" alt="Invite Momo" />
+  </a>
+  <a href="https://discord.gg/cKq99GVVRf">
+    <img src="https://img.shields.io/badge/join-server-orange?style=for-the-badge" alt="Join Server" />
+  </a>
+</p>
+
+
 **Momo** is a sweet, feature-rich Discord bot designed to make server management feel like a breeze and community interaction feel like a treat. From powerful administrative "harvesting" tools to fun social commands, Momo is the perfect pick for your digital garden.
 
 ---
@@ -32,13 +42,6 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 
 ---
 
-## 🛠️ Invite Link
-
-<p align="center">
-  <a href="https://discord.com/oauth2/authorize?client_id=1461343342758592544&permissions=8&integration_type=0&scope=bot+applications.commands">
-    <img src="https://img.shields.io/badge/invite-momo-FFCCBB?style=for-the-badge" alt="Invite Momo" />
-  </a>
-</p>
 
 ---
 
