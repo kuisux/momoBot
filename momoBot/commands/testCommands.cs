@@ -6,6 +6,8 @@ using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
 using momoBot.other;
 using System;
+using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 
 namespace momoBot.commands
@@ -140,7 +142,7 @@ namespace momoBot.commands
                 var winEmbed = new DiscordEmbedBuilder
                 {
                     Title = "you win!",
-                    Color = new DiscordColor("#C1E1C1")d
+                    Color = new DiscordColor("#C1E1C1")
                 };
                 await ctx.Channel.SendMessageAsync(embed: winEmbed);
             }
@@ -205,6 +207,42 @@ namespace momoBot.commands
             }
 
         }
+
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+        //compatibility smoothie
+
+        [Command("smoothie")]
+        [Aliases("compatability")]
+        [Description("Check the compatibility between two users.")]
+        public async Task SmoothieCommand(CommandContext ctx, DiscordMember member1, DiscordMember member2 = null)
+        {
+            DiscordMember first = member2 == null ? ctx.Member : member1;
+            DiscordMember second = member2 == null ? member1 : member2;
+
+            string id1 = first.Id.ToString();
+            string id2 = second.Id.ToString();
+            string combinedIds = string.Compare(id1, id2) < 0 ? id1 + id2 : id2 + id1;
+
+            using (var sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(System.Text.Encoding.UTF8 .GetBytes(combinedIds));
+                int hashValue = BitConverter.ToInt32(hashBytes, 0);
+                int percentage = Math.Abs(hashValue % 101);
+                string hearts = string.Concat(Enumerable.Repeat("❤️", percentage / 10));
+                string empty = string.Concat(Enumerable.Repeat("🖤", 10 - (percentage / 10)));
+                string progressBar = hearts + empty;
+
+                var embed = new DiscordEmbedBuilder
+                {
+                    Title = "🥤 Smoothie Compatibility",
+                    Description = $"**{first.DisplayName}** + **{second.DisplayName}**\n`{progressBar}`\n**{percentage}%**",
+                    Color = new DiscordColor("#FFCCBB")
+                };
+
+                await ctx.RespondAsync(embed: embed);
+            }
+        }
+
     }
 }
 
