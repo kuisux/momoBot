@@ -1,12 +1,11 @@
 
+using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
 using momoBot.other;
 using System;
-using System.Runtime.CompilerServices;
-using System.Security.Policy;
 using System.Threading.Tasks;
 
 namespace momoBot.commands
@@ -18,16 +17,73 @@ namespace momoBot.commands
         //status check   
 
         [Command("ping")]
+        [Description("Check if the bot is online.")]
         public async Task pingPong(CommandContext ctx)
         {
             await ctx.Channel.SendMessageAsync("pong!");
         }
+
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+        //ban
+
+        [Command("banish")]
+        [Aliases("ban")]
+        [Description("Ban a user from the server.")]
+        public async Task banUser(CommandContext ctx, DiscordMember member, [Description("Reason for the ban.")] string reason = "No reason provided.")
+        {
+            if (!ctx.Member.Permissions.HasPermission(Permissions.BanMembers))
+            {
+                try
+                {
+                    await member.BanAsync(0, reason);
+                    await ctx.Channel.SendMessageAsync($"{member.DisplayName} has been banned. Reason: {reason}");
+                }
+                catch (Exception)
+                {
+                    await ctx.Channel.SendMessageAsync("I couldn't ban that user. Check my perms and the user ID");
+                }
+            }
+            else
+            {
+                await ctx.Channel.SendMessageAsync("You do not have permission to ban members.");
+            }
+        }
+
+
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+        //kick
+
+        [Command ("kick")]
+        [Aliases("boot")]
+        [Description("Kick a user from the server.")]
+
+        public async Task kickUser(CommandContext ctx, DiscordMember member, [Description("Reason for the kick.")] string reason = "No reason provided.")
+        {
+            if (!ctx.Member.Permissions.HasPermission(Permissions.KickMembers))
+            {
+                try
+                {
+                    await member.RemoveAsync(reason);
+                    await ctx.Channel.SendMessageAsync($"{member.DisplayName} has been kicked. Reason: {reason}");
+                }
+                catch (Exception)
+                {
+                    await ctx.Channel.SendMessageAsync("I couldn't ban that user. Check my perms and the user ID");
+                }
+            }
+            else
+            {
+                await ctx.Channel.SendMessageAsync("You do not have permission to kick members.");
+            }
+        }
+
 
 
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
         //pfp Grabber      
 
         [Command("pfp")]
+        [Description("Get the profile picture of a user by their user ID.")]
         public async Task pfpGrabber(CommandContext ctx, ulong userId)
         {
             try
@@ -56,6 +112,7 @@ namespace momoBot.commands
 
 
         [Command("gamba")]
+        [Description("Play a simple card game against the bot. Draw a card each, higher card wins")]
         public async Task cardGame(CommandContext ctx)
         {
             var userCard = new cardSystem();
@@ -83,7 +140,7 @@ namespace momoBot.commands
                 var winEmbed = new DiscordEmbedBuilder
                 {
                     Title = "you win!",
-                    Color = new DiscordColor("#C1E1C1")
+                    Color = new DiscordColor("#C1E1C1")d
                 };
                 await ctx.Channel.SendMessageAsync(embed: winEmbed);
             }
@@ -123,8 +180,11 @@ namespace momoBot.commands
         }
 
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+        //dice
 
         [Command("roll")]
+        [Aliases("d")]
+        [Description("Roll a dice with a specified maximum number.")]
         public async Task rollCommand(CommandContext ctx, int max)
         {
             try
