@@ -43,9 +43,6 @@ Momo isn't just another bot; she’s designed with a soft, warm aesthetic and a 
 
 ---
 
-
----
-
 🎨 Aesthetic Guide
 If you are contributing or customizing Momo, please use the following brand colors:
 
